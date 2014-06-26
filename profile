@@ -44,8 +44,8 @@ bind -f ~/.gh-dotfiles/bash_bindings
 alias r="rails"
 
 # nodemon alias
-alias digimon = "nodemon"
-alias pokemon = "nodemon"
+alias digimon="nodemon"
+alias pokemon="nodemon"
 
 # vim alias
 alias mvimt="mvim --remote-tab"
