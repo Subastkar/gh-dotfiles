@@ -69,6 +69,7 @@ alias :q='exit'
 alias cp_ssh="xclip ~/.ssh/id_rsa.pub | xclip -o | xclip -sel clip"
 
 #console alias
+alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 
 # annex alias
 alias gan="git annex"
