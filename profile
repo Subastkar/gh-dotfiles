@@ -54,9 +54,10 @@ alias gv="gvim"
 alias gk="gitk --all &"
 
 # git alias
-alias gpair='git config --global user.name "Alberto Alcaraz + Daniel Guzman" ; git config --global user.email "alberto.alcaraz@tangosource.com + daniel.guzman@tangosource.com" '
 alias gme='git config --global user.name "Alberto Alcaraz" ; git config --global user.email "jaalcarazz@yahoo.com" '
-alias gts='git config --global user.name "Alberto Alcaraz" ; git config --global user.email "alberto.alcaraz@tangosource.com" '
+gpair() {
+  git config --global user.name "Alberto Alcaraz + $1" ; git config --global user.email "jaalcarazz@yahoo.com + $2"
+}
 alias gconfig='git config --list'
 alias gimpact="git log --shortstat --author \"Alberto Alcaraz\" | grep \"files changed\" | awk '{files+=\$1; inserted+=\$4; deleted+=\$6} END {print \"Files changed:\", files, \"Lines inserted:\", inserted, \"Lines deleted:\", deleted}'"
 alias glk='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
